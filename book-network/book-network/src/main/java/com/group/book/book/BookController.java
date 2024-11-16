@@ -1,6 +1,6 @@
-package com.alibou.book.book;
+package com.group.book.book;
 
-import com.alibou.book.common.PageResponse;
+import com.group.book.common.PageResponse;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;

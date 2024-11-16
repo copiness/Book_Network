@@ -1,4 +1,4 @@
-package com.alibou.book.history;
+package com.group.book.history;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -42,7 +42,7 @@ public interface BookTransactionHistoryRepository extends JpaRepository<BookTran
             SELECT transaction
             FROM BookTransactionHistory  transaction
             WHERE transaction.book.createdBy = :userId
-            AND transaction.book.id = :bookId
+            AND transaction.book.id= :bookId
             AND transaction.returned = true
             AND transaction.returnApproved = false
             """)

@@ -1,7 +1,7 @@
-package com.alibou.book.feedback;
+package com.group.book.feedback;
 
-import com.alibou.book.book.Book;
-import com.alibou.book.common.BaseEntity;
+import com.group.book.book.Book;
+import com.group.book.common.BaseEntity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;

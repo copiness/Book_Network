@@ -1,4 +1,4 @@
-package com.alibou.book.security;
+package com.group.book.security;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -16,13 +16,12 @@ import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
 
-// @Component
+ @Component
 @RequiredArgsConstructor
 public class JwtFilter { //extends OncePerRequestFilter {
-    /*private final JwtService jwtService;
+    private final JwtService jwtService;
     private final UserDetailsService userDetailsService;
 
-    @Override
     protected void doFilterInternal(
             @NonNull HttpServletRequest request,
             @NonNull HttpServletResponse response,
@@ -56,5 +55,5 @@ public class JwtFilter { //extends OncePerRequestFilter {
             }
         }
         filterChain.doFilter(request, response);
-    }*/
+    }
 }

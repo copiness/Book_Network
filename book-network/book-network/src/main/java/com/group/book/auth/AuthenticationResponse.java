@@ -1,4 +1,4 @@
-package com.alibou.book.auth;
+package com.group.book.auth;
 
 import lombok.Builder;
 import lombok.Getter;

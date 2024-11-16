@@ -1,4 +1,4 @@
-package com.alibou.book.auth;
+package com.group.book.auth;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;

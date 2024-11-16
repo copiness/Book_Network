@@ -1,8 +1,8 @@
-package com.alibou.book.book;
+package com.group.book.book;
 
-import com.alibou.book.common.BaseEntity;
-import com.alibou.book.feedback.Feedback;
-import com.alibou.book.history.BookTransactionHistory;
+import com.group.book.common.BaseEntity;
+import com.group.book.feedback.Feedback;
+import com.group.book.history.BookTransactionHistory;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Transient;

@@ -1,7 +1,7 @@
-package com.alibou.book.book;
+package com.group.book.book;
 
-import com.alibou.book.file.FileUtils;
-import com.alibou.book.history.BookTransactionHistory;
+import com.group.book.file.FileUtils;
+import com.group.book.history.BookTransactionHistory;
 import org.springframework.stereotype.Service;
 
 @Service

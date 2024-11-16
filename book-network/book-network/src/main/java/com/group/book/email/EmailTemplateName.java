@@ -1,4 +1,4 @@
-package com.alibou.book.email;
+package com.group.book.email;
 
 import lombok.Getter;
 

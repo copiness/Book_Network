@@ -1,10 +1,10 @@
-package com.alibou.book.feedback;
+package com.group.book.feedback;
 
-import com.alibou.book.book.Book;
-import com.alibou.book.book.BookRepository;
-import com.alibou.book.common.PageResponse;
-import com.alibou.book.exception.OperationNotPermittedException;
-import com.alibou.book.user.User;
+import com.group.book.book.Book;
+import com.group.book.book.BookRepository;
+import com.group.book.common.PageResponse;
+import com.group.book.exception.OperationNotPermittedException;
+import com.group.book.user.User;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -31,7 +31,7 @@ public class FeedbackService {
         if (book.isArchived() || !book.isShareable()) {
             throw new OperationNotPermittedException("You cannot give a feedback for and archived or not shareable book");
         }
-        // User user = ((User) connectedUser.getPrincipal());
+         User user = ((User) connectedUser.getPrincipal());
         if (Objects.equals(book.getCreatedBy(), connectedUser.getName())) {
             throw new OperationNotPermittedException("You cannot give feedback to your own book");
         }

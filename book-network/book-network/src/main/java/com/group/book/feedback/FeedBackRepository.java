@@ -1,4 +1,4 @@
-package com.alibou.book.feedback;
+package com.group.book.feedback;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

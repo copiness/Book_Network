@@ -1,4 +1,4 @@
-package com.alibou.book.book;
+package com.group.book.book;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

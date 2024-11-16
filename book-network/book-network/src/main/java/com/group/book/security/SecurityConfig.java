@@ -1,4 +1,4 @@
-package com.alibou.book.security;
+package com.group.book.security;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;

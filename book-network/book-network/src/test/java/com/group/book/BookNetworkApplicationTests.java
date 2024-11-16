@@ -6,8 +6,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class BookNetworkApplicationTests {
 
-	@Test
+	@Test // This annotation marks the method as a test method.
 	void contextLoads() {
+		// This method will pass if the application context loads successfully.
 	}
-
 }

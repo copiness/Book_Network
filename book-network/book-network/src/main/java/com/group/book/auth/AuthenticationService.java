@@ -1,13 +1,13 @@
-package com.alibou.book.auth;
+package com.group.book.auth;
 
-import com.alibou.book.email.EmailService;
-import com.alibou.book.email.EmailTemplateName;
-import com.alibou.book.role.RoleRepository;
-import com.alibou.book.security.JwtService;
-import com.alibou.book.user.Token;
-import com.alibou.book.user.TokenRepository;
-import com.alibou.book.user.User;
-import com.alibou.book.user.UserRepository;
+import com.group.book.email.EmailService;
+import com.group.book.email.EmailTemplateName;
+import com.group.book.role.RoleRepository;
+import com.group.book.security.JwtService;
+import com.group.book.user.Token;
+import com.group.book.user.TokenRepository;
+import com.group.book.user.User;
+import com.group.book.user.UserRepository;
 import jakarta.mail.MessagingException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
@@ -27,7 +27,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class AuthenticationService {
 
-    /*private final UserRepository userRepository;
+    private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
     private final JwtService jwtService;
     private final AuthenticationManager authenticationManager;
@@ -131,5 +131,5 @@ public class AuthenticationService {
         }
 
         return codeBuilder.toString();
-    }*/
+    }
 }

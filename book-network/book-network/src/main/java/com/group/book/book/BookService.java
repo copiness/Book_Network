@@ -1,11 +1,10 @@
-package com.alibou.book.book;
+package com.group.book.book;
 
-import com.alibou.book.common.PageResponse;
-import com.alibou.book.exception.OperationNotPermittedException;
-import com.alibou.book.file.FileStorageService;
-import com.alibou.book.history.BookTransactionHistory;
-import com.alibou.book.history.BookTransactionHistoryRepository;
-import com.alibou.book.user.User;
+import com.group.book.common.PageResponse;
+import com.group.book.exception.OperationNotPermittedException;
+import com.group.book.file.FileStorageService;
+import com.group.book.history.BookTransactionHistory;
+import com.group.book.history.BookTransactionHistoryRepository;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -21,7 +20,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.util.List;
 import java.util.Objects;
 
-import static com.alibou.book.book.BookSpecification.withOwnerId;
+import static com.group.book.book.BookSpecification.withOwnerId;
 
 @Service
 @RequiredArgsConstructor
@@ -48,7 +47,7 @@ public class BookService {
     }
 
     public PageResponse<BookResponse> findAllBooks(int page, int size, Authentication connectedUser) {
-        // User user = ((User) connectedUser.getPrincipal());
+        // User = ((User) connectedUser.getPrincipal());
         Pageable pageable = PageRequest.of(page, size, Sort.by("createdDate").descending());
         Page<Book> books = bookRepository.findAllDisplayableBooks(pageable, connectedUser.getName());
         List<BookResponse> booksResponse = books.stream()

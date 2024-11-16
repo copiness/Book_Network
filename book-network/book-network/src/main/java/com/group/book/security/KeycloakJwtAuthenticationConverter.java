@@ -1,4 +1,4 @@
-package com.alibou.book.security;
+package com.group.book.security;
 
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.lang.NonNull;

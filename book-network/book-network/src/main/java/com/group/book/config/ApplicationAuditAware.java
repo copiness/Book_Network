@@ -1,6 +1,6 @@
-package com.alibou.book.config;
+package com.group.book.config;
 
-import com.alibou.book.user.User;
+import com.group.book.user.User;
 import org.springframework.data.domain.AuditorAware;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -19,7 +19,7 @@ public class ApplicationAuditAware implements AuditorAware<String> {
             return Optional.empty();
         }
 
-        // User userPrincipal = (User) authentication.getPrincipal();
+         User userPrincipal = (User) authentication.getPrincipal();
 
         return Optional.ofNullable(authentication.getName());
     }

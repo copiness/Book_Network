@@ -1,4 +1,4 @@
-package com.alibou.book.email;
+package com.group.book.email;
 
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;

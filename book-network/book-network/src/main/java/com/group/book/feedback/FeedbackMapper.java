@@ -1,6 +1,6 @@
-package com.alibou.book.feedback;
+package com.group.book.feedback;
 
-import com.alibou.book.book.Book;
+import com.group.book.book.Book;
 import org.springframework.stereotype.Service;
 
 import java.util.Objects;

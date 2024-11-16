@@ -1,4 +1,4 @@
-package com.alibou.book.feedback;
+package com.group.book.feedback;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
